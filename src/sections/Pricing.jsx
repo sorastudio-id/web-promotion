@@ -177,7 +177,7 @@ const Pricing = () => {
             </ul>
 
             {/* CTA Button */}
-            <Button href="#payment" size="lg" pulse className="w-full">
+            <Button href="https://lynk.id/sorastudio/jevqk95rrx9q/checkout" target="_blank" rel="noopener noreferrer" size="lg" pulse className="w-full">
               🚀 Dapatkan Akses Sekarang
             </Button>
 

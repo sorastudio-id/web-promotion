@@ -9,6 +9,7 @@ import Benefits from './sections/Benefits'
 import TargetUsers from './sections/TargetUsers'
 import Testimonials from './sections/Testimonials'
 import Pricing from './sections/Pricing'
+import HowToBuy from './sections/HowToBuy'
 import FAQ from './sections/FAQ'
 import Footer from './sections/Footer'
 
@@ -26,6 +27,7 @@ function App() {
         <TargetUsers />
         <Testimonials />
         <Pricing />
+        <HowToBuy />
         <FAQ />
       </main>
       <Footer />
@@ -35,3 +37,4 @@ function App() {
 }
 
 export default App
+
