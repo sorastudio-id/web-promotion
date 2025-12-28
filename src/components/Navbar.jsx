@@ -78,7 +78,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden glass-strong mt-2 mx-4 rounded-xl sm:rounded-2xl overflow-hidden"
+            className="lg:hidden bg-dark-base/95 backdrop-blur-xl border border-white/10 mt-2 mx-4 rounded-xl sm:rounded-2xl overflow-hidden"
           >
             <div className="p-4 flex flex-col gap-3 sm:gap-4">
               {navLinks.map((link) => (

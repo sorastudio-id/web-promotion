@@ -35,7 +35,7 @@ const FloatingWhatsApp = () => {
           initial={{ opacity: 0, scale: 0, y: 100 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0 }}
-          className="fixed bottom-6 right-6 z-50"
+          className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50"
         >
           {/* Tooltip */}
           <AnimatePresence>

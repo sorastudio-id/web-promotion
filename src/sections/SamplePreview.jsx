@@ -78,21 +78,23 @@ const SamplePreview = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.25 }}
-        className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-8"
+        className="overflow-x-auto pb-2 mb-6 sm:mb-8 scrollbar-hide"
       >
-        {samples.map((sample) => (
-          <button
-            key={sample.id}
-            onClick={() => setActiveTab(sample.id)}
-            className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all ${
-              activeTab === sample.id
-                ? 'bg-primary text-white'
-                : 'bg-white/5 text-text-secondary hover:bg-white/10'
-            }`}
-          >
-            {sample.title}
-          </button>
-        ))}
+        <div className="flex justify-start sm:justify-center gap-2 sm:gap-3 min-w-max px-4 sm:px-0">
+          {samples.map((sample) => (
+            <button
+              key={sample.id}
+              onClick={() => setActiveTab(sample.id)}
+              className={`px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all whitespace-nowrap ${
+                activeTab === sample.id
+                  ? 'bg-primary text-white'
+                  : 'bg-white/5 text-text-secondary hover:bg-white/10'
+              }`}
+            >
+              {sample.title}
+            </button>
+          ))}
+        </div>
       </motion.div>
 
       {/* Image Preview */}
@@ -143,7 +145,7 @@ const SamplePreview = () => {
           <p className="text-center text-text-muted text-sm sm:text-base mb-4">
             Dan masih banyak lagi...
           </p>
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+          <div className="flex flex-wrap justify-center gap-2 gap-y-3 sm:gap-3">
             {[
               "🎬 Overlay Transition",
               "🌈 Motion Background",
