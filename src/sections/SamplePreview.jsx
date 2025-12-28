@@ -5,35 +5,37 @@ import SectionWrapper from '../components/SectionWrapper'
 const SamplePreview = () => {
   const [activeTab, setActiveTab] = useState(0)
 
+  const baseUrl = import.meta.env.BASE_URL
+
   const samples = [
     {
       id: 0,
       title: "Motion Background",
-      image: "/sample-assets.png",
+      image: `${baseUrl}sample-assets.png`,
       description: "380+ Motion Background Premium 4K"
     },
     {
       id: 1,
       title: "Green Screen",
-      image: "/sample-greenscreen.png",
+      image: `${baseUrl}sample-greenscreen.png`,
       description: "300+ Green Screen Animation Siap Pakai"
     },
     {
       id: 2,
       title: "Emoji Animation",
-      image: "/sample-emoji.png",
+      image: `${baseUrl}sample-emoji.png`,
       description: "200+ Emoji & Sticker Green Screen"
     },
     {
       id: 3,
       title: "Sound Effects",
-      image: "/sample-sounds.png",
+      image: `${baseUrl}sample-sounds.png`,
       description: "1000+ Sound Effects & SFX"
     },
     {
       id: 4,
       title: "Icons Pack",
-      image: "/sample-icons.png",
+      image: `${baseUrl}sample-icons.png`,
       description: "500+ Icons & Illustrations"
     }
   ]
