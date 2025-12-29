@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import Hero from './sections/Hero'
@@ -14,6 +15,18 @@ import FAQ from './sections/FAQ'
 import Footer from './sections/Footer'
 
 function App() {
+  useEffect(() => {
+    if (window.location.hash) {
+      // Delay untuk menunggu semua konten dimuat
+      setTimeout(() => {
+        const target = document.getElementById(window.location.hash.substring(1));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navbar />
